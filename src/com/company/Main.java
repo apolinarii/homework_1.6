@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class Main {
     }
 
     public static int[] generateRandomArray() {
-        java.util.Random random = new java.util.Random();
+        Random random = new Random();
         int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
@@ -50,6 +52,28 @@ public class Main {
         System.out.println(min);
         System.out.println(max);
         System.out.println(avg);
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i=0; i<a.lenght; i++){
+            System.out.print(a[i]);
+        }
+        System.out.println();
+
+        int n = a.lenght;
+        String name;
+
+        for (int i=0; i<n/2; i++){
+            name = a[n-i-1];
+            a[n-i-1] = a[i];
+            a[i] = name;
+        }
+        for (int i=0; i<a.lenght; i++) {
+            System.out.print(a[i]);
+        }
+
+
+        
+
     }
 
     }
