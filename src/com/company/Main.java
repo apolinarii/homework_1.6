@@ -20,9 +20,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
-        return arr;
 
-        int a = 3;
         int[] array1 = new int [2];
         for (int i = 0; i < array1.length; i++) {
             array1[i] = (int) (Math.random() * 100_000 + 100_000);
@@ -34,7 +32,7 @@ public class Main {
 
         for (int b = 0; b < array1.length; b++) {
             if (max < array1[b])
-                min = array1[b];
+                max = array1[b];
             if (max > array1[b])
                 min = array1[b];
             avg = avg + array1[b]/array1.length;
@@ -54,21 +52,18 @@ public class Main {
         System.out.println(avg);
 
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i=0; i<a.lenght; i++){
-            System.out.print(a[i]);
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = Integer.parseInt(reader.readLine());
         }
+
+        for (int i : arr){
+            System.out.print(i + " ");
+        }
+
         System.out.println();
 
-        int n = a.lenght;
-        String name;
-
-        for (int i=0; i<n/2; i++){
-            name = a[n-i-1];
-            a[n-i-1] = a[i];
-            a[i] = name;
-        }
-        for (int i=0; i<a.lenght; i++) {
-            System.out.print(a[i]);
+        for (int i = arr.length-1; i >= 0; i--){
+            System.out.print(arr[i] + " ");
         }
 
 
